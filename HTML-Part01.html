@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+</head>
+
+<body>
+    <header>我是头部标签</header>
+    <section>我是一个区域</section>
+    <aside>我是侧边栏</aside>
+    这个是换行<br/>
+    这个是空格&nbsp;空格<br/>
+    这个是无序标签
+    <ul>
+        <li>我的第一个列表信息</li>
+        <li>我的第二个列表信息</li>
+    </ul><br/>
+    这是有序标签
+    <ol>
+        <li>我的第一个列表信息。</li>
+        <li>我的第一个列表信息。</li>
+    </ol><br/>
+    这是图片
+    <img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" alt = "My Image" title = "提示文本"><br/>
+    这是超链接
+    <a  href="http://www.imooc.com"  target="_blank" title="点击进入慕课网">click here!</a><br/>
+    这是表格
+    <table border="1">
+        <!--tr代表一行 -->
+        <tr>
+             <!--td代表一列 -->
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>18</td>
+        </tr>
+    </table><br/>
+    这是表单：
+    <form    method="post"   action="save.php">
+        <label for="username">用户名:</label>
+        <input type="text" name="username" />
+        <label for="pass">密码:</label>
+        <input type="password" name="pass" />
+</form>
+<form>
+    <!--
+        1、type：
+
+        当type="text"时，输入框为文本输入框;
+
+        当type="password"时, 输入框为密码输入框。
+
+        2、name：为文本框命名，以备后台程序ASP 、PHP使用。
+
+        3、value：为文本输入框设置默认值。(一般起到提示作用)
+
+        4、placeholder：占位符，起提示作用
+    -->
+    姓名：
+    <input type="text" name="myName" value="文本" placeholder="请输入姓名">
+    <br/>
+    密码：
+    <input type="password" name="pass" value="123" placeholder="请输入密码">
+    <br/>
+     数字输入框：
+    <input type="number">
+    <br/>
+    网址输入框：
+    <input type="url">
+    <br/>
+    邮箱输入框：
+    <input type="email">
+    <br/>
+    文本域：
+    <textarea  rows="5" cols="列数50">文本</textarea>
+    <br/>
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" checked="checked" />
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+    <br/>
+    爱好：
+    <!--
+        1、type:
+        当 type="radio" 时，控件为单选框
+        当 type="checkbox" 时，控件为复选框
+        2、value：提交数据到服务器的值（后台程序PHP使用）
+        3、name：为控件命名，以备后台程序 ASP、PHP 使用
+        4、checked：当设置 checked="checked" 时，该选项被默认选中
+    -->
+    <input   type="checkbox"   value="跑步"    name="checkbox1"   checked="checked"/>跑步
+    <input   type="checkbox"   value="打球"    name="checkbox2"   checked="checked"/>打球
+    <input   type="checkbox"   value="游泳"    name="checkbox3"   />游泳
+    <br/>
+    <label>爱好:</label>
+    <select>
+      <option value="看书">看书</option>
+      <option value="旅游" selected="selected">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+    <br/>
+    <!--当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上,注意：标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。
+    -->
+    <form>
+    <label for="email">输入你的邮箱地址</label>
+        <input type="email" id="email" placeholder="Enter email">
+    </form>
+  </form>
+    这个是水平分割线<hr />
+
+    <footer>我是底部标签</footer>
+</body>
+
+</html>
